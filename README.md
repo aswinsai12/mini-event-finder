@@ -86,15 +86,15 @@ Base URL: {API_URL}
 ### CURL Samples
 
 List
-curl https://YOUR_API.onrender.com/api/events
+curl https://mini-event-finder-n2d2.onrender.com/api/events
 
 Create
-curl -X POST https://YOUR_API.onrender.com/api/events
+curl -X POST https://mini-event-finder-n2d2.onrender.com/api/events
 -H "Content-Type: application/json"
 -d [{"id":1,"title":"competative programming","description":"from newbie to legendary grandmaster(journey of Shreyan Ray(dominater_69))","location":{"name":"Vizag","lat":17.6868,"lng":83.2185},"date":"2025-11-05T17:30:00.000Z","maxParticipants":300,"currentParticipants":200}]
 
 Get by id
-curl https://YOUR_API.onrender.com/api/events/1
+curl https://mini-event-finder-n2d2.onrender.com/events/1
 
 ## Deployment
 
@@ -110,7 +110,7 @@ The server must listen on `process.env.PORT` and host `0.0.0.0`.
 
 ### Frontend (Vercel)
 - Root: frontend
-- Environment Variable: `VITE_API_URL=https://YOUR_API.onrender.com`
+- Environment Variable: `VITE_API_URL=https//mini-event-finder-n2d2.onrender.com/`
 - SPA routes: add `frontend/vercel.json`:
 {
 "rewrites": [
